@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// Function to count unplaced fruit types
 int numOfUnplacedFruits(int* fruits, int n, int* baskets, int m) {
     bool used[m];
     for (int i = 0; i < m; ++i)
@@ -19,13 +18,12 @@ int numOfUnplacedFruits(int* fruits, int n, int* baskets, int m) {
             }
         }
         if (!placed)
-            unplacedCount++;  // this fruit type couldn't be placed
+            unplacedCount++;  
     }
 
     return unplacedCount;
 }
 
-// Main function to test the above
 int main() {
     int fruits[] = {4, 2, 5};
     int baskets[] = {3, 5, 2};
