@@ -31,7 +31,7 @@ int main() {
     int m = sizeof(baskets) / sizeof(baskets[0]);
 
     int result = numOfUnplacedFruits(fruits, n, baskets, m);
-    printf("Unplaced fruit types: %d\n", result);  // Expected output: 1
+    printf("Unplaced fruit types: %d\n", result);  
 
     return 0;
 }
