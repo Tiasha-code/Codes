@@ -13,8 +13,6 @@ int sumOfSquares(int n) {
 
 bool isHappy(int n) {
     int slow = n, fast = n;
-
-    // Floyd's cycle detection: fast moves 2 steps, slow moves 1
     do {
         slow = sumOfSquares(slow);
         fast = sumOfSquares(sumOfSquares(fast));
