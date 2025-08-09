@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 bool isPowerOfTwo(int n) {
-    // Must be positive and have only one bit set
+    if (n <= 0) return false;
     return n > 0 && (n & (n - 1)) == 0;
 }
 
