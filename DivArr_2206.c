@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 bool divideArray(int* nums, int numsSize) {
-    int freq[501] = {0}; // Constraint assumption: 1 <= nums[i] <= 500
+    int freq[501] = {0}; 
 
     for (int i = 0; i < numsSize; i++) {
         freq[nums[i]]++;
@@ -10,10 +10,10 @@ bool divideArray(int* nums, int numsSize) {
 
     for (int i = 0; i <= 500; i++) {
         if (freq[i] % 2 != 0) {
-            return false; // Found a number with odd frequency
+            return false; 
         }
     }
-    return true; // All numbers occur even number of times
+    return true; 
 }
 
 int main() {
