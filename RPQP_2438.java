@@ -1,3 +1,4 @@
+
 class Solution {
     int mod = 1_000_000_007;
 
