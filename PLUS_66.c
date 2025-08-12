@@ -33,6 +33,6 @@ int main() {
     int* result = plusOne(digits, digitsSize, &returnSize);
     printArray(result, returnSize);
 
-    if (result != digits) free(result);  // Avoid freeing stack memory
+    if (result != digits) free(result);  
     return 0;
 }
